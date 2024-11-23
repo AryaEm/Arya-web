@@ -37,14 +37,14 @@ export default function Navbar() {
             </div>
 
             <div className={`
-                    fixed overflow-hidden top-5 left-5 rounded-full bg-[#055E68] backdrop-blur-md bg-opacity-50 h-14 flex justify-end pr-5 items-center gap-8 font-medium text-zinc-200 
+                    fixed overflow-hidden top-5 left-5 rounded-full bg-[#3B5249] backdrop-blur-md bg-opacity-50 h-14 flex justify-end pr-5 items-center gap-8 font-medium text-zinc-200 
                     transform transition-all duration-700
-                    ${isNavVisible ? "w-[490px]" : "w-14"
+                    ${isNavVisible ? "xl:w-[490px] w-[380px]" : "w-14"
                     } `}>
-                <Link href={''} className="flex items-center gap-1"><HiMiniHome className="text-xl" />Home</Link>
-                <Link href={''} className="flex items-center gap-1"><FaPersonRifle className="text-xl"/>About</Link>
-                <Link href={''} className="flex items-center gap-1"><FaLaptopCode className="text-xl"/>Project</Link>
-                <Link href={''} className="flex items-center gap-1"><RiMessage3Fill className="text-xl"/>Contact</Link>
+                <Link href={''} className="flex items-center gap-1"><HiMiniHome className="xl:flex hidden text-xl" />Home</Link>
+                <Link href={''} className="flex items-center gap-1"><FaPersonRifle className="xl:flex hidden text-xl"/>About</Link>
+                <Link href={''} className="flex items-center gap-1"><FaLaptopCode className="xl:flex hidden text-xl"/>Project</Link>
+                <Link href={''} className="flex items-center gap-1"><RiMessage3Fill className="xl:flex hidden text-xl"/>Contact</Link>
             </div>
         </>
     )
