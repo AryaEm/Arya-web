@@ -20,9 +20,9 @@ export default function Navbar() {
 
     return (
         <>
-            <div onClick={toggleNav} className="burgerShadow absolute z-[999] top-5 cursor-pointer left-5 bgPrimary w-14 h-14 rounded-full flex justify-center items-center shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
+            <div className="burgerShadow absolute z-[999] top-5 cursor-pointer left-5 bgPrimary w-14 h-14 rounded-full flex justify-center items-center shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
                 <label className="relative cursor-pointer">
-                    <input type="checkbox" className="hidden peer" />
+                    <input onClick={toggleNav} type="checkbox" className="hidden peer" />
                     <svg
                         viewBox="0 0 32 32"
                         className="h-12 transition-transform duration-600 ease-in-out peer-checked:rotate-[-45deg]"
@@ -37,10 +37,10 @@ export default function Navbar() {
             </div>
 
             <div className={`
-                    fixed overflow-hidden top-5 left-5 rounded-full w-[500px] bg-[#055E68] backdrop-blur-md bg-opacity-50 h-14 flex justify-end pr-5 items-center gap-8 font-semibold text-white 
+                    fixed overflow-hidden top-5 left-5 rounded-full bg-[#055E68] backdrop-blur-md bg-opacity-50 h-14 flex justify-end pr-5 items-center gap-8 font-medium text-zinc-200 
                     transform transition-all duration-700
-                    ${isNavVisible ? "w-[450px]" : "w-14"}
-                `}>
+                    ${isNavVisible ? "w-[490px]" : "w-14"
+                    } `}>
                 <Link href={''} className="flex items-center gap-1"><HiMiniHome className="text-xl" />Home</Link>
                 <Link href={''} className="flex items-center gap-1"><FaPersonRifle className="text-xl"/>About</Link>
                 <Link href={''} className="flex items-center gap-1"><FaLaptopCode className="text-xl"/>Project</Link>

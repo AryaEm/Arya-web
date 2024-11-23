@@ -1,5 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/broadmen");
 @import url("https://fonts.cdnfonts.com/css/dinotype");
+@import url('https://fonts.cdnfonts.com/css/daveysdoodleface');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,10 @@
 
   .dinotype {
     font-family: "Dinotype", sans-serif;
+  }
+
+  .davey {
+    font-family: 'DaveysDoodleface', sans-serif;
   }
 }
 
@@ -84,7 +89,7 @@ input:checked + svg .line-top-bottom {
   transform: rotateX(51deg) rotateZ(-16deg);
   transform-style: preserve-3d;
   border-radius: 32px;
-  box-shadow: 1px 1px 0 1px #055e68, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+  box-shadow: 2px 2px 0 1px #055e68, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
     28px 28px 28px 0 rgba(34, 33, 81, 0.25);
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
 }
