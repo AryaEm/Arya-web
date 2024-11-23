@@ -6,7 +6,7 @@ import podium from "@/assets/3d podium.svg"
 export default function Home() {
   return (
     <section className="h-dvh w-full">
-      <Image src={podium} alt="" className="h-full w-full object-cover absolute -z-[1]"/>
+      <Image src={podium} alt="background" className="h-full w-full object-cover absolute -z-[1]"/>
       <Hero></Hero>
       <Navbar></Navbar>
     </section>
