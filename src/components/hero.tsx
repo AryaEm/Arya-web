@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mici from "@/assets/Michelle.svg"
+import mici from "@/assets/Michelle (1).svg"
 import about from "@/assets/about emoji.svg"
 import project from "@/assets/projectEmoji.svg"
 import contact from "@/assets/contactEmoji.svg"
@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
 
                 <div className="h-full xl:block hidden xl:w-1/2 w-0 overflow-hidden box-border">
-                    <div className="w-[40%] h-[36%] flex justify-end items-end">
+                    <div className="w-[40%] h-[35%]  flex justify-end items-end">
                         <Link href={'about'}>
                             <Image src={about} alt="About" className="h-32 w-32 object-cover" />
                         </Link>
