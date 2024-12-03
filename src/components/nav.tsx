@@ -13,9 +13,7 @@ export default function Navbar() {
     const [isNavVisible, setIsNavVisible] = useState(false)
 
     const toggleNav = () => {
-        console.log("Sebelum klik:", isNavVisible); // Menampilkan state sebelum perubahan
         setIsNavVisible(!isNavVisible)
-        console.log("Setelah klik:", !isNavVisible); // Menampilkan state setelah perubahan
     }
 
     return (
@@ -37,7 +35,7 @@ export default function Navbar() {
             </div>
 
             <div className={`
-                    fixed overflow-hidden top-5 left-5 rounded-full bg-[#3B5249] backdrop-blur-sm bg-opacity-40 h-14 flex justify-end pr-5 items-center gap-8 font-medium text-zinc-200 
+                    fixed overflow-hidden top-5 left-5 rounded-full bg-[#565656] backdrop-blur-sm bg-opacity-40 h-14 flex justify-end pr-5 items-center gap-8 font-medium text-zinc-200 
                     transform transition-all duration-700
                     ${isNavVisible ? "xl:w-[490px] w-[380px]" : "w-14"
                     } `}>

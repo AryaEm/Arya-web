@@ -1,43 +1,42 @@
-import Image from "next/image";
-import mici from "@/assets/Michelle (1).svg"
-import about from "@/assets/about emoji.svg"
-import project from "@/assets/projectEmoji.svg"
-import contact from "@/assets/contactEmoji.svg"
-import Link from "next/link";
-// import podium from "@/assets/3d podium.svg"
+import Image from "next/image"
+import background from "@/assets/podium.svg"
+import gwa from "@/assets/ini apa.svg"
+import { IoPlaySkipForward } from "react-icons/io5";
+import { IoPlaySkipBack } from "react-icons/io5";
+import { FaPlay } from "react-icons/fa";
 
 export default function Hero() {
     return (
         <>
-            {/* <div className="h-dvh w-full absolute -z-[1] bg-black">
-                <Image src={podium} alt="3d podium bg" className="h-dvh w-full object-cover object-left" />
-            </div> */}
+            <div className="h-dvh w-full flex justify-center items-end ">
+                <Image src={background} alt="Ini Background" className="absolute -z-[1] h-full w-full object-cover" />
 
-            <div className="w-full h-dvh flex overflow-hidden box-border">
+                {/* content */}
+                <div className="h-[60%] w-[20%] brd relative bottom-36 rounded-lg blurrr flex items-center flex-col">
+                    <div className="border-[1px] border-zinc-200 rounded-full h-[6%] w-[40%] mt-5 flex items-center justify-center">
+                        <p className="text-sm font-medium text-zinc-600 cursor-pointer">Music</p>
+                    </div>
 
-                <div className="h-full xl:w-1/2 w-full text-white flex box-border justify-center overflow-hidden">
-                    <div className="absolute bottom-48 xl:bottom-32 cursor-pointer overflow-hidden z-[2] box-border header-text">
-                        <h2 className="font-normal overflow-hidden dinotype tracking-wide text-8xl xl:text-9xl">ARYA.</h2>
+                    <div className="border-[1px] border-zinc-200 w-[60%] h-[40%] mt-12 rounded-2xl">
+                        <Image src={gwa} alt="gwa" className="h-full w-full object-cover rounded-2xl cursor-pointer" />
                     </div>
-                    <div className="kotak absolute overflow-x-hidden box-border z-[1] bottom-28 xl:bottom-16 w-[350px] xl:w-[420px] h-64 bg-zinc-400 bg-opacity-40 backdrop-blur-md"></div>
-                    <div className="absolute bottom-36 xl:bottom-28 -z-[1] w-[300px] h-[550px] xl:h-[500px] cursor-pointer">
-                        <Image src={mici} alt="micheee" className="h-full w-full object-cover" />
+
+                    <div className="mt-5 w-[60%] h-[10%] flex items-center justify-center flex-col">
+                        <p className="text-zinc-600 font-semibold text-2xl leading-5">blue</p>
+                        <p className="text-zinc-600 font-medium text-base">yung kai</p>
                     </div>
+
+                    <div className="w-[60%] h-[10%] mt-4 flex items-center justify-center gap-10">
+                        <IoPlaySkipBack className="text-2xl text-zinc-800 cursor-pointer"/>
+                        <FaPlay className="text-xl text-zinc-800 cursor-pointer"/>
+                        <IoPlaySkipForward className="text-2xl text-zinc-800 cursor-pointer"/>
+                    </div>
+
+                    <div className="h-[15%] w-[20%] rounded-full blur-lg opacity-80 bg-pink-400 absolute -z-[1] left-10 top-20"></div>
+                    <div className="h-[15%] w-[20%] rounded-full blur-lg opacity-80 bg-cyan-300 absolute -z-[1] right-10 top-64"></div>
                 </div>
 
-                <div className="h-full xl:block hidden xl:w-1/2 w-0 overflow-hidden box-border">
-                    <div className="w-[40%] h-[35%]  flex justify-end items-end">
-                        <Link href={'about'}>
-                            <Image src={about} alt="About" className="h-32 w-32 object-cover" />
-                        </Link>
-                    </div>
-                    <div className="w-[77%] h-[18%] flex items-end justify-end">
-                        <Image src={project} alt="About" className="h-28 w-28  cursor-pointer object-cover" />
-                    </div>
-                    <div className="w-[58%] h-[12%] flex justify-end">
-                        <Image src={contact} alt="About" className="h-24 w-24  cursor-pointer object-cover" />
-                    </div>
-                </div>
+                <div className="w-[16%] h-[3%] rounded-full absolute bg-zinc-900 blur-lg -z-[1] bottom-24"></div>
 
             </div>
         </>
