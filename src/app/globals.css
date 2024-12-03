@@ -73,6 +73,18 @@ input:checked + svg .line-top-bottom {
   border: 1px solid rgba(244, 244, 245, 0.51);
 }
 
-.card-shadow {
-  box-shadow: 2px 2px 20px gray;
+/* .parallax-container {
+  perspective: 1000px;
+  overflow: hidden;
+} 
+
+.parallax-layer {
+  position: absolute;
+  transform-style: preserve-3d; 
+  backface-visibility: hidden; 
+  will-change: transform;
 }
+
+.layer-1 {
+  transform: translateZ(-200px) scale(1.2); 
+} */
