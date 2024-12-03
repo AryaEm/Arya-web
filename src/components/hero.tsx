@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import background from "@/assets/podium.svg";
-import gwa from "@/assets/ini apa.svg";
+// import gwa from "@/assets/ini apa.svg";
+import mici from "@/assets/mmmmmm.jpg"
 import { IoPlaySkipForward } from "react-icons/io5";
 import { IoPlaySkipBack } from "react-icons/io5";
 import { FaPlay } from "react-icons/fa";
@@ -35,7 +36,7 @@ export default function Hero() {
                     </div>
 
                     <div className="border-[1px] border-zinc-200 w-[60%] h-[40%] mt-12 rounded-2xl hover3d">
-                        <Image src={gwa} alt="gwa" className="h-full w-full object-cover rounded-2xl cursor-pointer" />
+                        <Image src={mici} alt="gwa" className="h-full w-full object-cover rounded-2xl cursor-pointer" />
                     </div>
 
                     <div className="mt-5 w-[60%] h-[10%] flex items-center justify-center flex-col">
